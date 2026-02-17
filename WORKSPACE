@@ -5,44 +5,44 @@ load("@//:python_system.bzl", "python_repo")
 
 http_archive(
     name = "com_google_googletest",
-    strip_prefix = "googletest-main",
-    urls = ["https://github.com/google/googletest/archive/main.zip"],
+    strip_prefix = "googletest-1.17.0",
+    urls = ["https://github.com/google/googletest/archive/refs/tags/v1.17.0.zip"],
 )
 
 http_archive(
     name = "com_google_benchmark",
-    strip_prefix = "benchmark-main",
-    urls = ["https://github.com/google/benchmark/archive/main.zip"],
+    strip_prefix = "benchmark-1.9.5",
+    urls = ["https://github.com/google/benchmark/archive/refs/tags/v1.9.5.zip"],
 )
 
 http_archive(
     name = "rules_cc",
-    strip_prefix = "rules_cc-main",
-    urls = ["https://github.com/bazelbuild/rules_cc/archive/main.zip"],
+    strip_prefix = "rules_cc-0.0.9",
+    urls = ["https://github.com/bazelbuild/rules_cc/archive/refs/tags/0.0.9.zip"],
 )
 
 http_archive(
     name = "rules_python",
-    strip_prefix = "rules_python-main",
-    url = "https://github.com/bazelbuild/rules_python/archive/main.zip",
+    strip_prefix = "rules_python-0.31.0",
+    url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.31.0.zip",
 )
 
 http_archive(
     name = "bazel_skylib",
-    strip_prefix = "bazel-skylib-main",
-    urls = ["https://github.com/bazelbuild/bazel-skylib/archive/main.zip"],
+    strip_prefix = "bazel-skylib-1.9.0",
+    urls = ["https://github.com/bazelbuild/bazel-skylib/archive/refs/tags/1.9.0.zip"],
 )
 
 http_archive(
     name = "com_google_absl",
-    strip_prefix = "abseil-cpp-master",
-    urls = ["https://github.com/abseil/abseil-cpp/archive/master.zip"],
+    strip_prefix = "abseil-cpp-20240722.0",
+    urls = ["https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.0.zip"],
 )
 
 http_archive(
     name = "com_google_absl_py",
-    strip_prefix = "abseil-py-main",
-    urls = ["https://github.com/abseil/abseil-py/archive/main.zip"],
+    strip_prefix = "abseil-py-2.4.0",
+    urls = ["https://github.com/abseil/abseil-py/archive/refs/tags/v2.4.0.zip"],
 )
 
 http_archive(
@@ -118,15 +118,15 @@ http_archive(
 http_archive(
     name = "tree_archive",
     build_file = "@//bazel:tree.BUILD",
-    strip_prefix = "tree-master",
-    urls = ["https://github.com/deepmind/tree/archive/master.zip"],
+    strip_prefix = "tree-3e79613493826e1eab59cfcfa2e4a54b56900c77",
+    urls = ["https://github.com/google-deepmind/tree/archive/3e79613493826e1eab59cfcfa2e4a54b56900c77.zip"],
 )
 
 http_archive(
     name = "pybind11_archive",
     build_file = "@//bazel:pybind11.BUILD",
-    strip_prefix = "pybind11-master",
-    urls = ["https://github.com/pybind/pybind11/archive/master.zip"],
+    strip_prefix = "pybind11-2.13.6",
+    urls = ["https://github.com/pybind/pybind11/archive/refs/tags/v2.13.6.zip"],
 )
 
 http_archive(

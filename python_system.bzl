@@ -54,8 +54,8 @@ toolchain(
 
 _GET_PYTHON_INCLUDE_DIR = """
 import sys
-from distutils.sysconfig import get_python_inc
-sys.stdout.write(get_python_inc())
+import sysconfig
+sys.stdout.write(sysconfig.get_path('include'))
 """.strip()
 
 _GET_PYTHON_SOABI = """
